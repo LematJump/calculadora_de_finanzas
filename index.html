@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRactica JS 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="practica">
+            <h1>
+                Calculadora de Finanzas
+            </h1>
+            <div class="calculadora">
+                <div class="ingresos">
+                    <h1>Ingresos</h1>   
+                    <p>
+                    ¿Cuanto ganas al mes por tu sueldo?:
+                    </p>
+                    <input type="text" id="sueldo_mensual">
+                    <p>
+                    ¿Cuanto estas dispuesto a ganar por mes aparte de tu sueldo? :
+                    </p>
+                    <input type="text" id="ingreso_extra">
+                    <div class="total">
+                        <h2>
+                            Ganancias: <span id="totalIngreso"></span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="egresos">
+                    <h1>Egresos</h1>
+                    <div class="comida">
+                        <p>
+                            ¿Cuanto gastas en comida al dia?
+                        </p>
+                        <input type="text" id="gasto_comida">
+                        <p><i>Nota: si realizas la despensa de todo el mes entonces dividelo entre 30</i></p>
+                        <div class="total">
+                            <h2>
+                                Comida: <span id="parcialComida"></span>
+                            </h2>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="transporte">
+                        <p>
+                        ¿Cuanto gastas en transporte por dia? :
+                        </p>
+                        <input type="text" id="gasto_transporte">
+                        <p>
+                            ¿Cuantos dias a la semana gastas en transporte?:
+                        </p>                     
+                        <input type="text" id="dias_transporte">
+                        <div class="total">
+                            <h2>
+                                Transporte: <span id="parcialTransporte"></span>
+                            </h2>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="renta">
+                        <p>
+                            ¿Cuanto pagas de renta al mes?
+                        </p>
+                        <input type="text" id="gasto_renta">
+                        <div class="total">
+                            <h2>
+                                Renta: <span id="parcialRenta"></span>
+                            </h2>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="servicios">
+                        <p>
+                            ¿Cuanto pagas de agua aproximadamente al mes?
+                        </p>
+                        <input type="text" id="gasto_agua">
+                        <p>
+                            ¿Cuanto pagas de luz aproximadamente al mes?
+                        </p>
+                        <input type="text" id="gasto_luz">
+                        <p>
+                            ¿Cuanto pagas de gas aproximadamente <b>Cada dos meses</b>?
+                        </p>
+                        <input type="text" id="gasto_gas">
+                        <p>
+                            ¿Cuanto pagas de Internet al mes?
+                        </p>
+                        <input type="text" id="gasto_internet">
+                        <div class="total">
+                            <h2>
+                                Servicios: <span id="parcialServicios"></span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="resultado">
+                    <h1>
+                        <span class="bueno" id="bueno"></span>
+                        <span class="malo" id="malo"></span>
+                    </h1>
+                    <h1 id="resultado"></h1>
+                    <p id="consejo"></p>
+                </div>
+            </div>
+            <div class="boton">
+                <input type="button" id="calculo" value="CALCULAR">
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
